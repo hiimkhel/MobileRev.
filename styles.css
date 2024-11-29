@@ -64,10 +64,10 @@ header{
 
 .header-title{
     color: white;
-    font-weight: 500;
-    font-size: 28px;
+    font-weight: 100;
+    font-size: 38px;
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: "Monoton";
 }
 .header-navs{
     display: flex;
@@ -78,6 +78,7 @@ header{
 }
 .header-navs a{
     color: #fff;
+    
     text-decoration: none;
     font-size: 18px;
     padding: 20px;
@@ -104,32 +105,12 @@ header{
     font-size: 24px;
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    .header-navs {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px; 
-        right: 0;
-        padding: 10px;
-        width: 100%;
-    }
 
-    .header-navs.active {
-        display: flex;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-}
 /*Intro Section Styles*/
 .intro-section {
-    font-family: 'Georgia', serif;
+    font-family: 'Tomorrow', serif;
     line-height: 1.6;
     width: 100%;
-
     margin: 0 auto;
     padding: 20px;
     background-color: #1c1c1c;
@@ -339,7 +320,7 @@ header{
 .stats-desc{
     font-size: 24px;
     margin-bottom: 50px;
-    font-family: "Roboto";
+    font-family: "Oswald";
     font-weight: 400;
     color: #a5a5a5;
 }
@@ -418,6 +399,7 @@ header{
 .fun-facts-section h1{
     margin: 20px auto;
     font-size: 24px;
+    font-family: 'Tomorrow', Courier, monospace;
     color: #e0e0e0;
 }
 .fun-facts-section{
@@ -438,7 +420,7 @@ header{
     );
     width: 80%;
     border-radius: 20px;
-    height: 90vh;
+    height: 80vh;
     margin: 20px auto;
 
     padding: 20px;  
@@ -511,6 +493,12 @@ header{
     align-items: center;
     justify-content: center;
 
+}
+.faqs-title{
+    color: #ebebeb;
+    justify-self: center;
+    font-size: 32px;
+    margin: 12px;
 }
 .faq-container{
     width: 100%;
@@ -845,14 +833,7 @@ header{
         opacity: 0;
     }
 }
-@media screen and (max-width: 678px) {
-    .carousel .list .item .content{
-        padding-right: 0;
-    }
-    .carousel .list .item .content .title{
-        font-size: 30px;
-    }
-}
+
 /*Timeline Styles*/
 .read-more-btn{
     display: flex;
@@ -923,12 +904,7 @@ header{
     background: rgba(255, 255, 255, 0.4);
 }
 
-@media only screen and (max-width : 767px){
-    .timeline::before{
-        left: 40px;
-    }
 
-}
 .timeline-item{
     padding: 20px 20px;
     opacity: 0.3;
@@ -991,34 +967,7 @@ header{
 .timeline-item--active .timeline-content-date{
     margin: -45px 0 20px 0;
 }
-@media only screen and (max-width: 767px){
-    .timeline-item{
-        align-self: baseline !important;
-        width: 100%;
-        padding: 0 30px 150px 80px;
-    }
-    .timeline-item{
-        left: 10px !important;
-        padding: 0 !important;
-        top: 50px;
-        text-align: center !important;
-        width: 60px;
-        border: none !important;
-    }
-    .timeline-item:last-child{
-        padding-bottom: 40px;
-    }
-    .timeline-content-date {
-        font-size: 48px;
-    }
-    .timeline-content-title {
-        font-size: 14px;
-    }
-    .timeline-img {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
+
 .timeline-img{
     max-width: 100%;
     max-height: 100%;
@@ -1220,27 +1169,24 @@ header{
 
 
 /* Responsive Design for Small Screens */
-@media (max-width: 768px) {
- 
-    .innovations-container {
-        padding: 15px;
-    }
+.innovations-container {
+    padding: 15px;
+}
 
-    .innovations-header-title {
-        font-size: 28px;
-    }
+.innovations-header-title {
+    font-size: 28px;
+}
 
-    .innovation-title {
-        font-size: 18px;
-    }
+.innovation-title {
+    font-size: 18px;
+}
 
-    .innovation-content-desc, .contribution-desc {
-        font-size: 14px;
-    }
+.innovation-content-desc, .contribution-desc {
+    font-size: 14px;
+}
 
-    .innovator-name {
-        font-size: 22px;
-    }
+.innovator-name {
+    font-size: 22px;
 }
 
 
@@ -1326,28 +1272,7 @@ header{
 
 
 /* Responsive Design for Small Screens */
-@media (max-width: 768px) {
 
-    .impact-container {
-        padding: 15px;
-    }
-
-    .impact-header-title {
-        font-size: 28px;
-    }
-
-    .impact-title {
-        font-size: 22px;
-    }
-
-    .impact-desc {
-        font-size: 14px;
-    }
-
-    .impact-intro p {
-        font-size: 16px;
-    }
-}
 /*About Us Styles*/
 /* About Us Section */
 /* Meet Our Team Section */
@@ -1495,7 +1420,7 @@ header{
     padding: 20px;
     color: #fff;
     background-color: #1e1e1e;
-    max-height: 45vh;
+    height: 45vh;
 }
 .footer-container-img{
     display: flex;
@@ -1557,4 +1482,221 @@ header{
     border-top: 2px solid white;
     margin: 20px auto;
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 767px){
+   
+    .header-navs {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .header-navs.active {
+        display: flex;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+    .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+
+    .landing-page-container {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .landing-page-img-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-page-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .landing-page {
+        align-items: center;
+    }
+    .landing-page-container,
+    .landing-page-img-container {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .landing-page-container-desc{
+        font-size: 18px;
+    }
+    .landing-page-container-title{
+        font-size: 22px;
+    }
+    .cta-btn{
+        font-size: 14px;
+    }
+    .landing-page-img {
+        max-width: 80%;
+    }
+    .intro-paragraph{
+        font-size: 1em;
+        padding:  auto;
+    }
+    
+    .fun-facts {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .circular-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .fun-facts h2 {
+        font-size: 20px;
+    }
+
+    .fun-facts p {
+        font-size: 14px;
+    }
+    .faq-section{
+        height: 90vh;
+    }
+    .faqs-title{
+        font-size: 1.8em;
+    }
+    .accordion-link{
+        font-size: 1.2em;
+    }
+    .answer p{
+        font-size: 1em;
+    }
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .slider-item-desc{
+        font-size: 34px;
+    }
+    .innovations-container {
+        padding: 15px;
+    }
+    .innovations-header{
+        width: 100%;
+
+    }
+    .innovations-header-title {
+        font-size: 28px;
+    }
+
+    .innovation-title {
+        font-size: 18px;
+    }
+
+    .innovation-content-desc, .contribution-desc {
+        font-size: 14px;
+    }
+
+    .innovator-name {
+        font-size: 22px;
+    }
+    .impact-container {
+        padding: 15px;
+    }
+
+    .impact-header-title {
+        font-size: 28px;
+    }
+
+    .impact-title {
+        font-size: 22px;
+    }
+
+    .impact-desc {
+        font-size: 14px;
+    }
+
+    .impact-intro p {
+        font-size: 16px;
+    }
+    .timeline::before{
+        left: 40px;
+    }
+    .timeline-item{
+        align-self: baseline !important;
+        width: 100%;
+        height: fit-content;
+        padding: 0 30px 150px 80px;
+    }
+    .timeline-item{
+        left: 50px !important;
+        padding: 0 !important;
+        margin-bottom: 235px;
+        top: 50px;
+        text-align: center !important;
+        width: 200px;
+        border: none !important;
+    }
+    .timeline-item:last-child{
+        padding-bottom: 40px;
+    }
+    .timeline-content-date {
+        font-size: 48px;
+    }
+    .timeline-content-title {
+        font-size: 14px;
+    }
+    .timeline-img {
+
+        width: 80%;
+        margin: 5px auto;
+    }
+    .read-more-btn{
+        margin: 10px 5px;
+    }
+    .left{
+        margin-left: 10px;
+    }
+    .footer-container{
+        padding: 10px;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-wvsu-content{
+        max-width: 200px;
+        margin: auto;
+    }
+    .footer-content-container p{
+        font-size: .8rem;
+    }
+    .footer-content-container{
+        margin-right: 50px;
+    }
+    
+    .footer-container-img{
+        margin-left: auto;
+    }
+    .footer-img{
+        max-width: 125px;
+        max-height: 75px;
+    }
+    .wvsu-title{
+        font-size: 14px;
+    }
+    .cict-title{
+        font-size: 12px;
+    }
 }
